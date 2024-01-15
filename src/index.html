@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Coin Counter</title>
 </head>
 <body>
-  
+  <form>
+    <input type="number" id="amount" name="amount" step="0.01" pattern="\d+(\.\d{1,2})?" placeholder="0.00" required>
+    <button type="submit">Count</button>
+  </form>
+  <div id="result" class="hidden">
+    <p id="quarter">Quarter: <span id="quarterAmount"></span></p>
+    <p id="dime">Dime: <span id="dimeAmount"></span></p>
+    <p id="nickel">Nickel: <span id="nickelAmount"></span></p>
+    <p id="penny">Penny: <span id="pennyAmount"></span></p>
+  </div>
 </body>
 </html>

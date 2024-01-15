@@ -21,7 +21,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'Sample', // CHANGE!
+      title: 'Coin Counter', // CHANGE!
       template: './src/index.html',
       inject: 'body'
     })
